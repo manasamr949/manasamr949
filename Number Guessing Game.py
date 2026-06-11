@@ -1,0 +1,16 @@
+import random
+
+secret = random.randint(1,10)
+
+while True:
+    guess = int(input("Guess a number (1-10): "))
+
+    if guess == secret:
+        print("Congratulations! You guessed the number.")
+        break
+
+    elif guess < secret:
+        print("Too Low! Try again.")
+
+    else:
+        print("Too High! Try again.")
